@@ -1,1 +1,1 @@
-# ProjetoLuzIng-
+Nesse projeto ele visa criar um site onde o cliente faz o cadastro com nome, email, senha obrigatorios depois se tudo tiver preenchido corretamente o usuario tem acesso ao site pricipal onde ele encontrará os itens de uma loja de materiais decorativos. O objetivo do site não é venda, o objetivo é mostrar para os clientes os produtos disponíveis na loja física com uma pesquisa de quais itens não tem disponíveis os clientes desejam que tenham na loja.
