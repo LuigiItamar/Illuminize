@@ -139,13 +139,26 @@ table {
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
-}
+    }
+@media (max-width: 600px)
+  {#header_home {
+    display: block;
+    }
+  }
+    
 
 .logo_header {
     height: 50px;
     width: 50px;
     margin-right: 10px;
 }
+  @media (max-width: 600px) {
+    .logo_header {
+      margin-left: 30px;
+      width: 30px;
+      height: 30px;
+    }
+  }
 
 h1 {
     font-size: 30px;
@@ -154,14 +167,28 @@ h1 {
     font-style: italic;
     font-weight: 600;
 }
-
+@media (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+}
 #divBusca { 
     padding-top: 5px;
     display: block;
     width: 100%;
-    margin-left: 130px;
+    margin-left: 180px;
 }
 
+@media (max-width: 600px) {
+  #divBusca {
+    margin-left: 0%;
+    padding-top: 20px;
+    display: flex;
+    text-align: center;
+    margin-top: -15px;
+    margin-left: 100px;
+    }
+  }
 
 #txtBusca {
     padding-left: 17px;
@@ -170,37 +197,94 @@ h1 {
     border-radius: 10px;
     font-weight: bold;
 }
+@media (max-width: 600px) {
+  #txtBusca {
+    display: none;
+    width: 30px;
+    }
+  }
 
-#btnBusca {
+@media (min-width: 600px) {
+  #btnBusca {
     width: 1rem;
     height: 1rem;
     margin-top: 10px;
     margin-bottom: -2px;
     margin-left: -40px;
-}
+    }
+  }
+@media (max-width: 600px) {
+  #btnBusca {
+    display: none;
+    }
+  }
+
+@media (max-width: 600px) {
+  #btnBusca_mobile {
+    width: 1.5rem;
+    height: 1.5rem;
+    }
+  }
+@media (min-width: 600px) {
+  #btnBusca_mobile {
+    display: none;
+    }
+  }
 
 a {
-  color: #FFE600;
+  text-decoration: none;
+  color: inherit;
 }
-a:hover {
-  color: #DABF25;
-}
-#style_contato, #style_endereco {
-  font-size: 20px;
-  padding-left: 65px;
-  margin-left: 50px;
-  padding-top: 3px;
-  margin-top: 10px;
+
+.row a{
+  padding-left: 0%;
+  padding-right: 0%;
 }
 
 #style_contato{
-  border-right: solid 2px #FFCD07;
-  height: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  font-size: 18px;
+  color: yellow;
+  margin-top: 18px;
+  margin-right: 10px;
+  margin-left: 80px;
+} 
+@media (max-width: 600px){ 
+  #style_contato {
+    display: none;
+}
 }
 
-#style_endereco {
-  margin-left: -50px;
+@media (max-width: 600px){ 
+  #style_divisoria {
+    display: none;
 }
+}
+
+  #style_contato:hover{
+    color: rgba(255, 255, 0, 0.767);
+    text-decoration: underline;
+  } 
+
+#style_endereco {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  font-size: 18px;
+  color: yellow;
+  margin-left: 10px;
+  margin-top: 18px;
+}
+@media (max-width: 600px){ 
+  #style_endereco {
+    display: none;
+}
+}
+  #style_endereco:hover {
+    color: rgba(255, 255, 0, 0.767);
+    text-decoration: underline;
+  }
+
 
 #style_carrinho {
   margin-left: 30px;
@@ -208,6 +292,12 @@ a:hover {
   padding-top: 6px;
   margin-left: -50px;
 }
+  @media (max-width: 600px) {
+    #style_carrinho {
+    width: 25px;
+  }
+  }
+  
 
 #style_carrinho:hover {
   filter: opacity(70%);
@@ -230,6 +320,33 @@ a:hover {
   padding-bottom: 10px;
 }
 
+#style_classe_produtos_links{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  font-size: 16px;
+  color: #462E00;
+  font-display: inherit;
+}
+@media (max-width: 600px){
+  #style_classe_produtos_links{
+  font-size: 10px;
+}
+}
+
+  #style_classe_produtos_links:hover{
+    color: #462e00d2;
+    text-decoration: underline;
+  }
+
+#style_valor_produto{
+  background-color: #462E00;
+  color: white;
+  height: 30px;
+  border-radius: 0px 0px 5px 5px;
+  margin-top: -5px;
+  padding-top: 5px;
+}
+
 #style_textos{
   font-family: 'Courier New', Courier, monospace;
   font-weight: 400;
@@ -237,8 +354,17 @@ a:hover {
   padding-bottom: 10px;
 }
 
+#classe_produtos {
+  height: 50px;
+}
+
 /*Slides*/
 
+@media (max-width:600px){
+  #desativar_style_carousel_mobile{
+    display: none;
+  }
+}
 #style_slides_textos{
   background-image: url(/imagens/Slide/fundo_slide.png);
   min-height: 450px; 

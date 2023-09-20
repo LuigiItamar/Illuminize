@@ -18,21 +18,31 @@
   <header id="header_home">
       <div class="container text-center">
         <div class="row align-items-start">
-          <div class="col d-flex align-items-center">
-            <img class="logo_header" src="imagens/pngwing.com.png" alt="">
-            <h1>Iluminize</h1>
-          </div> 
+          <a class="col" href="Home.html">
+            <div class="col d-flex align-items-center">
+              <img class="logo_header" src="imagens/pngwing.com.png" alt="">
+              <h1>Iluminize</h1> 
+            </div>
+          </a>  
+
           <div class="col" id="divBusca">
             <input type="text" id="txtBusca" placeholder="Pesquisar"/>
             <img src="imagens/lupa-removebg-preview.png" id="btnBusca" alt="Buscar"/>
+            <a href=""><img src="imagens/busca_mobile.png" id="btnBusca_mobile" alt="Buscar"/></a>
           </div>
-          <div class="col align-items-center" id="style_contato" aria-hidden="true">
-            <a href="">Contato</a>
+
+          <div style="width: 100%;" class="col d-flex">
+              <div class="col">
+                <a href=""><p id="style_contato">Contato</a></p>
+              </div>
+              <div class="col" id="style_divisoria" style="border-left: solid 3px yellow; height: 20px; margin-top: 17px;">
+              </div>
+              <div class="col">
+                <a href=""><p id="style_endereco">Endereço</a></p>
+              </div>
           </div>
-          <div class="col align-items-center" id="style_endereco" aria-hidden="true">
-            <a href="">Endereço</a>
-          </div>
-          <div class="col align-items-center">
+
+          <div class="col align-items-center" id="style_carrinho_mobile">
             <a href=""><img id="style_carrinho" src="imagens/carrinho-de-compras.png" alt=""></a>
           </div>
         </div>
@@ -40,9 +50,40 @@
     </header>
 </head>
 <body>
+  <div>
+    <div class="container text-center ">
+      <div id="classe_produtos" class="row align-items-center">
+        <div class="col">
+            <a href="">
+              <p id="style_classe_produtos_links">Arandelas</p>
+            </a>
+        </div>
+        <div class="col">
+            <a href="">
+              <p id="style_classe_produtos_links">Abajures</p>
+            </a>
+        </div>
+        <div class="col">
+            <a href="">
+              <p id="style_classe_produtos_links">Lampadas</p>
+            </a>
+        </div>
+        <div class="col">
+            <a href="">
+              <p id="style_classe_produtos_links">Luminarias</p>
+            </a>
+        </div>
+        <div class="col">
+            <a href="">
+              <p id="style_classe_produtos_links">Plafons</p>
+            </a>
+        </div>   
+      </div>
+    </div>
+
   <!-- Carrossel  -->
     <div id="carouselExample" class="carousel slide">
-      <div class="carousel-inner">
+      <div id="desativar_style_carousel_mobile" class="carousel-inner">
         <div id="style_slides_textos" class="carousel-item active">
           <div class="col">
             <p style="padding-top: 110px;">Novidade</p>
@@ -85,37 +126,61 @@
       
       <div class="container text-center ">
         <div class="row">
-          <div id="style_bloco_produtos" class="col">
-            <img style="height: 100px;" src="imagens/Slide/abajur_latao.png" alt="">
-            <div id="style_titulo_produto">
-              <p>PRODUTO TESTE</p>
+          <a href="" class="col">
+            <div id="style_bloco_produtos" >
+              <img style="height: 100px;" src="imagens/Slide/abajur_latao.png" alt="">
+              <div id="style_titulo_produto">
+                <p>PRODUTO TESTE</p>
+              </div>
+              <div id="style_valor_produto">
+                <p>R$ 199,90</p>
+              </div>
             </div>
-          </div>
-          <div id="style_bloco_produtos" class="col">
-            <img style="height: 100px;" src="imagens/Slide/abajur_latao.png" alt="">
-            <div id="style_titulo_produto">
-              <p>PRODUTO TESTE</p>
+          </a>
+          <a href="" class="col">
+            <div id="style_bloco_produtos" >
+              <img style="height: 100px;" src="imagens/Slide/abajur_latao.png" alt="">
+              <div id="style_titulo_produto">
+                <p>PRODUTO TESTE</p>
+              </div>
+              <div id="style_valor_produto">
+                <p>R$ 199,90</p>
+              </div>
             </div>
-          </div>
-          <div id="style_bloco_produtos" class="col">
-            <img style="height: 100px;" src="imagens/Slide/abajur_latao.png" alt="">
-            <div id="style_titulo_produto">
-              <p>PRODUTO TESTE</p>
+          </a>
+          <a href="" class="col">
+            <div id="style_bloco_produtos" >
+              <img style="height: 100px;" src="imagens/Slide/abajur_latao.png" alt="">
+              <div id="style_titulo_produto">
+                <p>PRODUTO TESTE</p>
+              </div>
+              <div id="style_valor_produto">
+                <p>R$ 199,90</p>
+              </div>
             </div>
-          </div>
-          <div id="style_bloco_produtos" class="col">
-            <img style="height: 100px;" src="imagens/Slide/abajur_latao.png" alt="">
-            <div id="style_titulo_produto">
-              <p>PRODUTO TESTE</p>
+          </a>
+          <a href="" class="col">
+            <div id="style_bloco_produtos" >
+              <img style="height: 100px;" src="imagens/Slide/abajur_latao.png" alt="">
+              <div id="style_titulo_produto">
+                <p>PRODUTO TESTE</p>
+              </div>
+              <div id="style_valor_produto">
+                <p>R$ 199,90</p>
+              </div>
             </div>
-          </div>
-          <div id="style_bloco_produtos" class="col">
-            <img style="height: 100px;" src="imagens/Slide/abajur_latao.png" alt="">
-            <div id="style_titulo_produto">
-              <p>PRODUTO TESTE</p>
+          </a>
+          <a href="" class="col">
+            <div id="style_bloco_produtos" >
+              <img style="height: 100px;" src="imagens/Slide/abajur_latao.png" alt="">
+              <div id="style_titulo_produto">
+                <p>PRODUTO TESTE</p>
+              </div>
+              <div id="style_valor_produto">
+                <p>R$ 199,90</p>
+              </div>
             </div>
-          </div>
-          
+          </a>
         </div>
       </div>
 
@@ -137,37 +202,61 @@
         
         <div class="container text-center ">
           <div class="row">
-            <div id="style_bloco_produtos" class="col">
-              <img style="height: 100px;" src="imagens/Slide/abajur_latao.png" alt="">
-              <div id="style_titulo_produto">
-                <p>PRODUTO TESTE</p>
+            <a href="" class="col">
+              <div id="style_bloco_produtos" >
+                <img style="height: 100px;" src="imagens/Slide/abajur_latao.png" alt="">
+                <div id="style_titulo_produto">
+                  <p>PRODUTO TESTE</p>
+                </div>
+                <div id="style_valor_produto">
+                  <p>R$ 199,90</p>
+                </div>
               </div>
-            </div>
-            <div id="style_bloco_produtos" class="col">
-              <img style="height: 100px;" src="imagens/Slide/abajur_latao.png" alt="">
-              <div id="style_titulo_produto">
-                <p>PRODUTO TESTE</p>
+            </a>
+            <a href="" class="col">
+              <div id="style_bloco_produtos" >
+                <img style="height: 100px;" src="imagens/Slide/abajur_latao.png" alt="">
+                <div id="style_titulo_produto">
+                  <p>PRODUTO TESTE</p>
+                </div>
+                <div id="style_valor_produto">
+                  <p>R$ 199,90</p>
+                </div>
               </div>
-            </div>
-            <div id="style_bloco_produtos" class="col">
-              <img style="height: 100px;" src="imagens/Slide/abajur_latao.png" alt="">
-              <div id="style_titulo_produto">
-                <p>PRODUTO TESTE</p>
+            </a>
+            <a href="" class="col">
+              <div id="style_bloco_produtos" >
+                <img style="height: 100px;" src="imagens/Slide/abajur_latao.png" alt="">
+                <div id="style_titulo_produto">
+                  <p>PRODUTO TESTE</p>
+                </div>
+                <div id="style_valor_produto">
+                  <p>R$ 199,90</p>
+                </div>
               </div>
-            </div>
-            <div id="style_bloco_produtos" class="col">
-              <img style="height: 100px;" src="imagens/Slide/abajur_latao.png" alt="">
-              <div id="style_titulo_produto">
-                <p>PRODUTO TESTE</p>
+            </a>
+            <a href="" class="col">
+              <div id="style_bloco_produtos" >
+                <img style="height: 100px;" src="imagens/Slide/abajur_latao.png" alt="">
+                <div id="style_titulo_produto">
+                  <p>PRODUTO TESTE</p>
+                </div>
+                <div id="style_valor_produto">
+                  <p>R$ 199,90</p>
+                </div>
               </div>
-            </div>
-            <div id="style_bloco_produtos" class="col">
-              <img style="height: 100px;" src="imagens/Slide/abajur_latao.png" alt="">
-              <div id="style_titulo_produto">
-                <p>PRODUTO TESTE</p>
+            </a>
+            <a href="" class="col">
+              <div id="style_bloco_produtos" >
+                <img style="height: 100px;" src="imagens/Slide/abajur_latao.png" alt="">
+                <div id="style_titulo_produto">
+                  <p>PRODUTO TESTE</p>
+                </div>
+                <div id="style_valor_produto">
+                  <p>R$ 199,90</p>
+                </div>
               </div>
-            </div>
-            
+            </a>
           </div>
         </div>
 
