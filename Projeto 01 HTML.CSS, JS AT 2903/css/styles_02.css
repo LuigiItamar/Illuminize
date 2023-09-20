@@ -222,6 +222,21 @@ a:hover {
   padding-bottom: 40px;
 }
 
+#titulo_h3{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#style_textos{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
 /*Slides*/
 
 #style_slides_textos{
@@ -285,6 +300,5 @@ a:hover {
   width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-top: 300px;
   min-height: 200px;
 }
